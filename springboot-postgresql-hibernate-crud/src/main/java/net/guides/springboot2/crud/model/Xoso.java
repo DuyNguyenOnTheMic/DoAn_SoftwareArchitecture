@@ -10,9 +10,9 @@ import javax.persistence.Table;
 @Table(name = "provinces")
 public class Xoso {
 
-	private String xs_id;
-	private String xs_name;
-	private String xs_type_region;
+	private int province_id;
+	private String province_name;
+	private int province_type_region;
 	
 	public Xoso() {
 		
@@ -20,29 +20,29 @@ public class Xoso {
 
 	@Id
 	@Column(name = "id")
-	public String getXs_id() {
-		return xs_id;
+	public int getProvince_id() {
+		return province_id;
 	}
 
-	public void setXs_id(String xs_id) {
-		this.xs_id = xs_id;
+	public void setProvince_id(int province_id) {
+		this.province_id = province_id;
 	}
 
 	@Column(name = "name")
-	public String getXs_name() {
-		return xs_name;
+	public String getProvince_name() {
+		return province_name;
 	}
 
-	public void setXs_name(String xs_name) {
-		this.xs_name = xs_name;
+	public void setProvince_name(String province_name) {
+		this.province_name = province_name;
 	}
 
 	@Column(name = "type_region")
-	public String getXs_type_region() {
-		return xs_type_region;
+	public int getProvince_type_region() {
+		return province_type_region;
 	}
 
-	public void setXs_type_region(String xs_type_region) {
-		this.xs_type_region = xs_type_region;
+	public void setProvince_type_region(int province_type_region) {
+		this.province_type_region = province_type_region;
 	}
 }
