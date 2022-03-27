@@ -1,7 +1,7 @@
 package net.guides.springboot2.crud.controller;
 
-import net.guides.springboot2.crud.model.Druginfo;
-import net.guides.springboot2.crud.repository.DruginfoRepository;
+import net.guides.springboot2.crud.model.Xoso;
+import net.guides.springboot2.crud.repository.XosoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,13 +11,13 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/v1")
-public class DruginfoController {
+public class XosoController {
 	@Autowired
-	private DruginfoRepository druginfoRepository;
+	private XosoRepository xosoRepository;
 
-	@GetMapping("/druginfo")
-	public List<Druginfo> getAllDruginfo() {
-		return druginfoRepository.findAll();
+	@GetMapping("/xoso")
+	public List<Xoso> getAllDruginfo() {
+		return xosoRepository.findAll();
 	}
 
 	/*
