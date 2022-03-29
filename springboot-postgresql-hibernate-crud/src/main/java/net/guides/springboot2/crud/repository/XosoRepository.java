@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 import net.guides.springboot2.crud.model.Xoso;
 
 @Repository
-public interface XosoRepository extends JpaRepository<Xoso, Integer>{
+public interface XosoRepository extends JpaRepository<Xoso, Long>{
 
 }
